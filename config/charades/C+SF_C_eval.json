@@ -1,0 +1,20 @@
+{
+    "is_inference": true,
+    "inference_id": "C+SF_C",
+    "inference_result_dir": "./results/eval",
+    "trained_result_dir": "./results/charades_C+SF_C",
+
+    "num_workers": 8,
+    "nms_thd": -1,
+    "device": "cuda",
+    "resume_all": false,
+    "sort_results": true,
+    "max_ts_val": 150, 
+    "ann_path": "./data/charades/annotations",
+    "feat_files": [
+        "./data/charades/clip_image.hdf5",
+        "./data/charades/slowfast.hdf5"
+    ],
+    "bpe_path": "./pretrained_models/bpe_simple_vocab_16e6.txt.gz",
+    "text_model_path": "./pretrained_models/clip_text_encoder.pth"
+}
