@@ -211,6 +211,14 @@ def eval_submission(submission, ground_truth, verbose=True, match_number=True, d
             "MR-full-R1@0.5": moment_ret_scores["full"]["MR-R1"]["0.5"],
             "MR-full-R1@0.7": moment_ret_scores["full"]["MR-R1"]["0.7"],
             "MR-full-miou": moment_ret_scores["full"]["MR-R1"]["miou"],
+            "MR-full-mAP": moment_ret_scores["full"]["MR-mAP"]["average"],
+            "MR-full-mAP@0.5": moment_ret_scores["full"]["MR-mAP"]["0.5"],
+            "MR-full-mAP@0.75": moment_ret_scores["full"]["MR-mAP"]["0.75"],
+            "MR-short-mAP": moment_ret_scores["short"]["MR-mAP"]["average"] if "short" in moment_ret_scores else None,
+            "MR-middle-mAP": moment_ret_scores["middle"]["MR-mAP"]["average"] if "middle" in moment_ret_scores else None,
+            "MR-long-mAP": moment_ret_scores["long"]["MR-mAP"]["average"] if "long" in moment_ret_scores else None,
+            "MR-superlong-mAP": moment_ret_scores["superlong"]["MR-mAP"]["average"] if "superlong" in moment_ret_scores else None,
+            
         }
         eval_metrics_brief.update(
             sorted([(k, v) for k, v in moment_ret_scores_brief.items()], key=lambda x: x[0]))
