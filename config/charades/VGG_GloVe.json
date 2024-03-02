@@ -23,7 +23,7 @@
     "max_windows": 5,
     "max_gather_size": -1,
     "device": "cuda",
-    "text_model_path": "./pretrained_models/glove.840B.300d.txt",
+    "text_model_path": "./pretrained_models/glove.6B.300d.txt",
     "share_MLP": true,
     "hidden_dim": 256,
     "dropout": 0.1,
