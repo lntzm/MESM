@@ -108,14 +108,52 @@ Same as [QD-DETR](https://github.com/wjun0830/QD-DETR), we also use the official
 ## Trained Models
 | Dataset | Extractors | Download Link |
 | :--: | :--: | :--: |
-| Charades-STA | C+SF, C | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EnpsfEa7bl5DoLINN0vlHYwBf_pNBSL1-uc5Mm34NwioYg?e=zqwtZD) |
 | Charades-STA | VGG, GloVe | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EmdVX_iFFhZDqZbs6w2trcUBuSvV7kFdrPZEMNwYsVX0Wg?e=B93ns1) |
+| Charades-STA | C+SF, C | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EnpsfEa7bl5DoLINN0vlHYwBf_pNBSL1-uc5Mm34NwioYg?e=zqwtZD) |
+
 
 ## Training
 
+You can run `train.py` with args in command lines:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python train.py {--args}
+```
+
+Or run with a config file as input:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python train.py --config_file ./config/charades/VGG_GloVe.json
+```
+
+
 ## Evaluation
 
+You can run `eval.py` with args in command lines:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python eval.py {--args}
+```
+
+Or run with a config file as input:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python eval.py --config_file ./config/charades/VGG_GloVe_eval.json
+```
+
 ## Citation
+If you find this repository useful, please use the following entry for citation.
+
+```
+@article{liu2023towards,
+  title={Towards Balanced Alignment: Modal-Enhanced Semantic Modeling for Video Moment Retrieval},
+  author={Liu, Zhihang and Li, Jun and Xie, Hongtao and Li, Pandeng and Ge, Jiannan and Liu, Sun-Ao and Jin, Guoqing},
+  journal={arXiv preprint arXiv:2312.12155},
+  year={2023}
+}
+```
 
 ## Acknowledgements
-
+This implementation is based on these repositories:
+- [QD-DETR](https://github.com/wjun0830/QD-DETR)
+- [CPL](https://github.com/minghangz/cpl)
