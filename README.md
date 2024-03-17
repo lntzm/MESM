@@ -15,9 +15,13 @@ MESM proposes the modal-enhanced semantic modeling for both levels to address th
 This work was tested with Python 3.8.12, CUDA 11.3, and Ubuntu 18.04. You can use the provided docker environment or install the environment manully.
 
 ### Docker
+Assuming you are now at path `/`.
 ```bash
+git clone https://github.com/lntzm/MESM.git
 docker pull lntzm/pytorch1.11.0-cuda11.3-cudnn8-devel:v1.0
 docker run -it --gpus=all --shm-size=64g --init -v /MESM/:/MESM/ lntzm/pytorch1.11.0-cuda11.3-cudnn8-devel:v1.0 /bin/bash
+# You should also download nltk_data in the container.
+python -c "import nltk; nltk.download('all')"
 ```
 
 ### Conda Environment
@@ -26,6 +30,8 @@ conda create -n MESM python=3.8
 conda activate MESM
 conda install pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch
 pip install -r requirements.txt
+# You should also download nltk_data.
+python -c "import nltk; nltk.download('all')"
 ```
 
 ## Data Preparation
