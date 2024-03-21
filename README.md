@@ -109,13 +109,19 @@ We provide the merged `hdf5` files of *CLIP* and *SlowFast* features [here](http
 ### QVHighlights Features
 Same as [QD-DETR](https://github.com/wjun0830/QD-DETR), we also use the official feature files for QVHighlights dataset from [Moment-DETR](https://github.com/jayleicn/moment_detr), which can be downloaded [here](https://drive.google.com/file/d/1Hiln02F1NEpoW8-iPZurRyi-47-W2_B9/view?usp=sharing), and merge them to `clip_image.hdf5` and `slowfast.hdf5`.
 
+
 ### TACoS Features
+We follow [VSLNet](https://github.com/26hzhang/VSLNet) to get the C3D features for TACoS. Specifically, we run `prepare/extract_tacos_org.py` and set the `sample_rate` 128 to extract the pretrained C3D visual features from [TALL](https://github.com/jiyanggao/TALL) and then convert it to `hdf5` file. We provide the converted file [here](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EuzuWDwYPX1Kvceb9px5Y1YBHmSfL_1ptk8CVuInCyDBdg?e=e14Qam).
+
 
 ## Trained Models
 | Dataset | Extractors | Download Link |
 | :--: | :--: | :--: |
 | Charades-STA | VGG, GloVe | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EmdVX_iFFhZDqZbs6w2trcUBuSvV7kFdrPZEMNwYsVX0Wg?e=B93ns1) |
 | Charades-STA | C+SF, C | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EnpsfEa7bl5DoLINN0vlHYwBf_pNBSL1-uc5Mm34NwioYg?e=zqwtZD) |
+| Charades-CG | C+SF, C | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EsGUsf-DfU5NoNJxC8K5iqwBMn1uUxt2WYuNIheKTXQOTw?e=ot50zt) |
+| TACoS | C3D, GloVe | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EpWhaB9jPANJjzX-s0KMrQ8BICETYM0D2soMdNFphEHdAw?e=pFFDY4) |
+
 
 
 ## Training
