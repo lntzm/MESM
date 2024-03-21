@@ -121,7 +121,7 @@ We follow [VSLNet](https://github.com/26hzhang/VSLNet) to get the C3D features f
 | Charades-STA | C+SF, C | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EnpsfEa7bl5DoLINN0vlHYwBf_pNBSL1-uc5Mm34NwioYg?e=zqwtZD) |
 | Charades-CG | C+SF, C | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EsGUsf-DfU5NoNJxC8K5iqwBMn1uUxt2WYuNIheKTXQOTw?e=ot50zt) |
 | TACoS | C3D, GloVe | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EpWhaB9jPANJjzX-s0KMrQ8BICETYM0D2soMdNFphEHdAw?e=pFFDY4) |
-
+| QVHighlights | C+SF, C | [OneDrive](https://mailustceducn-my.sharepoint.com/:f:/g/personal/liuzhihang_mail_ustc_edu_cn/EgBW1_p2_ZFLn3KeGpbfqAkBDbKlaO-njd7AHyGCc52zMQ?e=L5ftaU) |
 
 
 ## Training
