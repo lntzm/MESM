@@ -157,11 +157,14 @@ CUDA_VISIBLE_DEVICES=0 python eval.py --config_file ./config/charades/VGG_GloVe_
 If you find this repository useful, please use the following entry for citation.
 
 ```
-@article{liu2023towards,
+@inproceedings{liu2024towards,
   title={Towards Balanced Alignment: Modal-Enhanced Semantic Modeling for Video Moment Retrieval},
   author={Liu, Zhihang and Li, Jun and Xie, Hongtao and Li, Pandeng and Ge, Jiannan and Liu, Sun-Ao and Jin, Guoqing},
-  journal={arXiv preprint arXiv:2312.12155},
-  year={2023}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={4},
+  pages={3855--3863},
+  year={2024}
 }
 ```
 
