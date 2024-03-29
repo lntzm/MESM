@@ -114,4 +114,4 @@ class HungarianMatcher(nn.Module):
             for i in range(C.shape[-1]):
                 indices.append(linear_sum_assignment(C[i, :, i].unsqueeze(1)))
             # return torch.tensor(indices, dtype=torch.int64).squeeze()   # bsz * 2
-            return torch.from_numpy(np.array(indices).squeeze())
+            return torch.from_numpy(np.array(indices).squeeze(-1))
